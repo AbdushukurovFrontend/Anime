@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/footer.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/stayle.css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <!-- <embed style="width: 100%; height: 100vh" src="./pdf.pdf" type="" /> -->
+
+    <nav class="nav mt-3">
+      <i
+        class="fa-solid fa-bars-staggered navOpenBtn"
+        style="color: #ffffff"
+      ></i>
+      <a href="./index.html" class="logo">Home</a>
+      <ul class="nav-links d-flex align-items-center">
+        <i class="fa-solid fa-xmark navCloseBtn" style="color: #ffffff"></i>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">
+          <input class="input" type="text" placeholder="enter yout text">
+
+        </a></li>
+        <li><a href="#">Contact Us</a></li>
+
+        <div class="d-flex gap-2 align-items-center">
+          <!-- <button class="border-0 bg-transparent">
+            
+          </button> -->
+
+          <button
+            onclick="openbasket()"
+            type="button"
+            class="border-0 bg-transparent position-relative"
+          >
+            <i class="fa-solid fa-cart-arrow-down" style="color: #ffffff"></i>
+            <span
+              style="bottom: 10px"
+              class=" position-absolute start-100 translate-middle badge rounded-pill bg-danger"
+            >
+              0
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
+          <button class="text-white bg-transparent border-0">
+            <i style="color: #ffffff" class="fa-solid fa-plus"></i>
+            Edit
+          </button>
+        </div>
+      </ul>
+
+    <i id="searchIcon"
+    class="fa-brands fa-wordpress" style="color: #ffffff00; font-size: 1px;"></i>
+    </nav>
+    <header  class="container d-flex justify-content-center">
+      <fieldset>
+        <label
+          style="
+            --_img: url(https://w0.peakpx.com/wallpaper/49/616/HD-wallpaper-demon-slayer-gaming-macbook-pro-retina-games-and-background.jpg);
+          "
+        >
+          <input type="radio" name="images" value="Fiddle Leaf" />
+        </label>
+        <label
+          style="
+            --_img: url(https://wallpapercave.com/wp/wp10424264.jpg);
+          "
+        >
+          <input type="radio" name="images" value="Pink Princess" />
+        </label>
+        <label
+          style="--_img: url(https://images8.alphacoders.com/101/1014468.jpg)"
+        >
+          <input type="radio" name="images" value="Monstera" checked />
+        </label>
+        <label
+          style="
+            --_img: url(https://wallpapercave.com/wp/wp10304828.jpg);
+          "
+        >
+          <input type="radio" name="images" value="Pothos" />
+        </label>
+        <label
+          style="
+            --_img: url(https://a-static.besthdwallpaper.com/lightning-breath-user-zenitsu-agatsuma-wallpaper-2160x1440-41108_40.jpg);
+          "
+        >
+          <input type="radio" name="images" value="Rubber Tree" />
+        </label>
+      </fieldset>
+    </header>
+    <section class="container mt-5">
+      <div class="row" id="row">
+        <!-- <div class="mt-5 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="section_card">
+            <img src="./one.jpg" alt="" width="100%" />
+            <div class="content">
+              <h2>Sehr va Mushaklar</h2>
+              <div class="des">
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span>342$</span>
+
+                  <div class="d-flex gap-3 align-items-center">
+                    <i
+                      style="cursor: pointer"
+                      class="fa-solid fa-cart-plus"
+                    ></i>
+                    <div class="dropdown">
+                      <button
+                        class="border-0 bg-transparent"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i
+                          class="fa-solid fa-ellipsis-vertical"
+                          style="color: #ffffff"
+                        ></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            Edit <i class="fa-regular fa-pen-to-square"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Delet <i class="fa-solid fa-trash-can-arrow-up"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    
+
+    <!--_____________ modal______________ -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="mymodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="form_container">
+              <input id="url" class="i" type="text" placeholder="Img url" />
+              <input id="title" class="i" type="text" placeholder="Title" />
+              <input
+                id="description"
+                class="i"
+                type="text"
+                placeholder=" description"
+              />
+              <input id="price" class="i" type="text" placeholder="price" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" onclick="cardmodal()">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--_____________ basket_modal______________ -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="basketModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="besketProducts"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="closebasket()"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- _______________Footer__________ -->
+
+    <footer id="dk-footer" class="dk-footer mt-5 p-3 ">
+      <div class="">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 col-xl-4">
+            <div class="dk-footer-box-info">
+              <a href="index.html" class="footer-logo">
+                <!-- <img
+                  width="100%"
+                  src="https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_960_720.png"
+                  alt="footer_logo"
+                  class="img-fluid"
+                />
+              </a> -->
+              <p class="footer-info-text">
+               
+              </p>
+              <div class="footer-social-link">
+                <h3>Follow us</h3>
+                <ul>
+                  <li>
+                    <a href="https://t.me/Anime_uzbekcha">
+                      <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>                 </a>
+                  </li>
+                 
+                  <li>
+                    <a href="https://youtube.com/@animelar_tarjimasi?si=7EO0JmbsmCYUusVI">
+                      <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>                   </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-twitter"></i>                    </a>
+                    </li>
+                  <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>                  </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_img mt-3">
+                <img src="https://wallpapercave.com/wp/wp10424264.jpg" alt="" width="230px" height="300px">
+              </div>
+            </div>
+
+            <div class="footer-awarad">
+              <img src="images/icon/best.png" alt="" />
+              <!-- <p>B est Design Company 2019</p> -->
+            </div>
+          </div>
+          <!-- End Col -->
+          <div class="col-md-12 col-lg-8">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="contact-us  mt-5 ">
+                  <div class="contact-icon">
+                    <i class="fa-regular fa-map" style="color: #0887e7;"></i>                  </div>
+                  <!-- End contact Icon -->
+                  <div class="contact-info">
+                    <h3>Jaipur India</h3>
+                    <p>5353 Road Avenue</p>
+                  </div>
+                  <!-- End Contact Info -->
+                </div>
+                <!-- End Contact Us -->
+              </div>
+              <!-- End Col -->
+              <div class="col-md-6">
+                <div class="contact-us contact-us-last mt-5 ">
+                  <div class="contact-icon">
+                    <i
+                      class="fa fa-volume-control-phone"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <!-- End contact Icon -->
+                  <div class="contact-info">
+                    <h3>95 711 9 5353</h3>
+                    <p>Give us a call</p>
+                  </div>
+                  <!-- End Contact Info -->
+                </div>
+                <!-- End Contact Us -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Contact Row -->
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div class="footer-widget footer-left-widget">
+                  <div class="section-heading">
+                    <h3>Useful Links</h3>
+                    <span class="animate-border border-black"></span>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">About us</a>
+                    </li>
+                    <li>
+                      <a href="#">Services</a>
+                    </li>
+                    <li>
+                      <a href="#">Projects</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Team</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="#">Faq</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Footer Widget -->
+              </div>
+              <!-- End col -->
+              <div class="col-md-12 col-lg-6">
+                <div class="footer-widget">
+                  <div class="section-heading">
+                    <a href="" class="a" style="cursor: pointer;">Subscribe</a>
+                    <span class="animate-border border-black"></span>
+                  </div>
+                  <p>
+                    <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                    Reference site about Lorem Ipsum, giving information on its
+                    origins, as well.
+                  </p>
+                  <form action="#">
+                    <div class="form-row">
+                      <div class="col dk-footer-form">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                        <button type="submit">
+                            <i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End form -->
+                </div>
+                <!-- End footer widget -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+          <!-- End Col -->
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/object.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
